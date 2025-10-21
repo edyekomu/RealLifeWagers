@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RealWorldWages</title>
+
+        <!--Google Font Open Sans-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+        <!--Tailwind CDN (TEMPORARY)-->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['"Open Sans"', 'ui-sans-serif', 'system-ui'],
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+
+    <body class="font-sans">
+        <!--Navigation Container-->
+        <div class="max-w-4xl mx-auto px-4">
+
+            <!--Navbar-->
+            <div class="flex items-center font-medium my-2 px-4 py-2 rounded-md  bg-indigo-100">
+                <div class="ml-auto text-gray-700 hover:text-gray-900 px-3 py-2">
+                    <a href="{{url_for('index')}}">Home</a>
+                </div>
+
+                <div class="text-gray-700 hover:text-gray-900 px-3 py-2">
+                    <a>How to Play</a>
+                </div>
+
+                <div class="text-gray-700 hover:text-gray-900 px-3 py-2">
+                    <a>About Us</a>
+                </div>
+
+                <div class="text-gray-700 hover:text-gray-900 px-3 py-2">
+                    <a>Login</a>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+</html>
